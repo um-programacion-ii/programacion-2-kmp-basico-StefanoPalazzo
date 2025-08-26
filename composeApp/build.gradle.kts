@@ -67,6 +67,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(dependencyNotation = libs.voyager.navigator)
+            implementation(dependencyNotation = libs.voyager.transitions)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
