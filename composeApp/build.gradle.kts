@@ -65,10 +65,12 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(compose.materialIconsExtended)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(dependencyNotation = libs.voyager.navigator)
             implementation(dependencyNotation = libs.voyager.transitions)
+            implementation(dependencyNotation = libs.voyager.tabNavigator)
 
         }
         commonTest.dependencies {

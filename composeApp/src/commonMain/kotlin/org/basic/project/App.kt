@@ -30,6 +30,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import kmpbasico.composeapp.generated.resources.Res
 import kmpbasico.composeapp.generated.resources.compose_multiplatform
+import org.basic.project.bottomBar.BottomBarScreen
 import kotlin.native.CName
 import kotlin.time.Duration.Companion.days
 @Composable
@@ -118,6 +119,20 @@ class MainScreen: Screen {
                 Text(
                     text = "Third Screen",
                     fontSize = 20.sp
+                )
+            }
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            Button(
+                onClick = {
+                    navigator.push(
+                        item = BottomBarScreen()
+                    )
+                }
+            ) {
+                Text(
+                    text = "BottomBar",
                 )
             }
         }
